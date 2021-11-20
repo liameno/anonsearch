@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home - AnonSearch</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="../third_party/fontawesome/css/all.css" rel="stylesheet">
+
+    <link rel="stylesheet" media="all" href="../css/page.css">
+    <link rel="stylesheet" media="all" href="../css/index.css">
+</head>
+<body>
+<div class="background"></div>
+<div class="container">
+    <div class="main_widget">
+        <form class="search_widget" action="search" method="GET">
+            <div class="checkboxes">
+                {VAR_ENGINE_CHECKBOXES}
+            </div>
+
+            <input class="input" name="q" type="search" placeholder="" required>
+            <button class="button" type="submit">
+                <i class="fa fa-search"> Search</i>
+            </button>
+        </form>
+    </div>
+</div>
+</body>
+</html>

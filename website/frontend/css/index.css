@@ -1,0 +1,84 @@
+.main_widget {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 20%;
+    right: 20%;
+    margin: auto;
+    height: 400px;
+}
+
+.search_widget {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 5%;
+    right: 5%;
+    margin: auto;
+}
+
+.input {
+    position: relative;
+    border: 0;
+    width: 100%;
+    height: 40px;
+    background-color: var(--dark);
+    color: var(--white);
+    border-bottom: 1px solid var(--gray_dark);
+    outline: none;
+}
+
+.button {
+    text-transform: uppercase;
+    position: relative;
+    border: 0;
+    cursor: pointer;
+    height: 40px;
+    width: 100%;
+    color: var(--white_dark);
+    background: var(--dark);
+}
+
+.button:hover {
+    background-color: var(--dark_light);
+}
+
+[type="checkbox"] {
+    position: absolute;
+    left: -9999px;
+    width: 0;
+    height: 0;
+    visibility: hidden;
+}
+
+.checkboxes {
+    background: var(--dark);
+    padding: 15px;
+    margin-bottom: 5%;
+}
+
+.checkbox ~ label {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: var(--dark);
+    text-align: center;
+    font-size: 14px;
+    letter-spacing: 1px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border-radius: 4px;
+    cursor: pointer;
+    color: var(--white);
+    text-transform: uppercase;
+    transition: all 300ms linear;
+    display:inline-block;
+    width: 100%;
+}
+
+.checkbox:hover ~ label {
+    cursor: pointer;
+}
+
+.checkbox:checked ~ label {
+    background-color: var(--gray_dark);
+}

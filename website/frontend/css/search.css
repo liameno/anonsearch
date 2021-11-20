@@ -1,0 +1,109 @@
+.top_container {
+    position: relative;
+    float: top;
+    height: 40px;
+    background-color: var(--black_transparent);
+}
+
+.return {
+    position: relative;
+    display: flex;
+    align-items:center;
+    left: 14px;
+    width: 70px;
+    height: 40px;
+    text-decoration: none;
+    color: var(--white_dark);
+}
+
+.left_container {
+    position: relative;
+    float: left;
+    margin-top: 14px;
+    margin-bottom: 14px;
+    left: 14px;
+    width: 48%;
+    background-color: var(--black_transparent);
+}
+
+.right_container {
+    position: relative;
+    float: right;
+    margin-top: 14px;
+    margin-bottom: 14px;
+    right: 14px;
+    width: 48%;
+    background-color: var(--black_transparent);
+}
+
+.left_result {
+    position: relative;
+    padding: 1.2rem 22px 1.7rem;
+    border-bottom: 1px solid var(--gray_dark);
+}
+
+.right_result {
+    position: relative;
+    padding: 1.2rem 22px 1.7rem;
+    border-bottom: 1px solid var(--gray_dark);
+}
+
+.icon {
+    width: 16px;
+    height: 16px;
+}
+
+.title {
+    text-decoration: none;
+    color: var(--red_light);
+    font-size: 20px;
+    vertical-align: center;
+}
+
+.url {
+     text-decoration: none;
+     color: var(--blue_dark);
+}
+
+.description {
+    letter-spacing: 0;
+    font-size: 14px;
+    color: var(--gray_light_dark);
+}
+
+.buttons {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.page_button {
+    text-decoration: none;
+    margin: 0 5px;
+    padding: 16px 32px 16px 32px;
+    background: var(--red_light);
+    color: var(--light);
+    border-radius: 5px;
+}
+
+@media (max-width: 770px) {
+    .left_container {
+        position: relative;
+        float: none;
+        width: 94%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .right_container {
+        position: relative;
+        float: none;
+        right: 0;
+        width: 94%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
